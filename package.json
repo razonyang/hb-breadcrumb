@@ -1,0 +1,19 @@
+{
+  "name": "HB Breadcrumb Module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razonyang/hb-breadcrumb.git"
+  },
+  "author": "Razon Yang <razonyang@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razonyang/hb-breadcrumb/issues"
+  },
+  "homepage": "https://github.com/razonyang/hb-breadcrumb",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}
