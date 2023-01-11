@@ -5,16 +5,12 @@
         {{- range .Ancestors.Reverse }}
           <li class="breadcrumb-item">
             <a href="{{ .RelPermalink }}">
-              {{ if .IsHome }}
-                {{- i18n "hb_breadcrumb_home" -}}
-              {{ else }}
-                {{- .Title -}}
-              {{ end }}
+              {{- cond .IsHome (i18n "hb_breadcrumb_home") .Title -}}
             </a>
           </li>
         {{- end -}}
         <li class="breadcrumb-item active" aria-current="page">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
         </li>
       </ol>
     </nav>
