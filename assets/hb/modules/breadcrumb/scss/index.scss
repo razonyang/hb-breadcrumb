@@ -33,4 +33,22 @@
             padding-left: 1rem;
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        .breadcrumb-item:not(:first-child):not(:last-child) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 3rem;
+
+            a {
+                display: none;
+            }
+
+            &::after {
+                content: "...";
+                margin-top: -0.5rem;
+            }
+        }
+    }
 }
