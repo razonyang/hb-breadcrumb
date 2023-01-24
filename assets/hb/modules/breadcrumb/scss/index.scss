@@ -31,19 +31,13 @@
                 color: inherit;
             }
         }
-
-        &:first-child {
-            a {
-                padding-left: 0.5rem !important;
-            }
-        }
     }
 
     .breadcrumb-item:first-child {
         clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 50%, calc(100% - 1rem) 100%, 0 100%);
 
         a {
-            padding-left: 1rem;
+            padding-left: 0.75rem;
         }
     }
 
